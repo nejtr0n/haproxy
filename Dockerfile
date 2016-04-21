@@ -9,4 +9,4 @@ ADD https://releases.hashicorp.com/consul-template/${CONSUL_TEMPLATE_VERSION}/co
 RUN unzip consul-template_${CONSUL_TEMPLATE_VERSION}_linux_amd64.zip  
 RUN mv consul-template /usr/local/bin/consul-template 
 RUN rm -rf /consul-template_${CONSUL_TEMPLATE_VERSION}_linux_amd64.zip 
-ENTRYPOINT ["/bin/start.sh"]
+
